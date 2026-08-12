@@ -88,8 +88,7 @@ Remember inside your project's root pom.xml, it has something like:
 ```
 
 </p>
-<b>Note:</b> it might contain other unavailable feature such as web backends. Do not use it until new package updates
-(where this script will may be removed).
+<b>Note:</b> it might contain other unavailable feature such as web backends. Do not use it until new package updates.
 
 ## Found bugs or want some new features?
 You can freely convey it via create new issues at its GitHub repository. Since it was still in alpha, so maybe there's 
