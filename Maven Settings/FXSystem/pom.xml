@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.eta</groupId>
+        <artifactId>eta-gui</artifactId>
+        <version>11.5</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <name>FXSystem</name>
+    <dependencies>
+        <dependency>
+            <groupId>com.eta</groupId>
+            <artifactId>eta-fx-backend</artifactId>
+            <version>11.5</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eta</groupId>
+            <artifactId>eta-util-java</artifactId>
+            <version>11.5</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.eta</groupId>
+            <artifactId>JFreeChartShared</artifactId>
+            <version>11.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart-fx</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+    </dependencies>
+    <artifactId>fx-system</artifactId>
+
+    <!-- fat jar construction !-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.7.1</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>FXSystem.SinglePlotAndInit.EtaFXPlotter</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
