@@ -1,0 +1,63 @@
+/* noinspection CssUnknownPseudoClass */
+.root {
+    -fx-background-color: #2B2B2B;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.label {
+    -fx-text-fill: #A9B7C6;
+    -fx-font-size: 13px;
+}
+
+.button {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 6 16;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #4C4F51;
+}
+.button:pressed {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+
+.combo-box {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 2 6;
+}
+.combo-box .list-cell {
+    -fx-text-fill: #A9B7C6;
+    -fx-background-color: #3C3F41;
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+.combo-box .arrow-button .arrow {
+    -fx-background-color: #A9B7C6;
+}
+
+.text-area {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 4 6;
+}
+.text-area:focused {
+    -fx-border-color: #33BBAD;
+}
+.text-area .content {
+    -fx-background-color: #3C3F41;
+}

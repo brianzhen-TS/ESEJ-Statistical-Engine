@@ -1,0 +1,97 @@
+/* noinspection CssUnknownPseudoClass */
+.root {
+    -fx-background-color: #2B2B2B;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.label {
+    -fx-text-fill: #A9B7C6;
+    -fx-font-size: 13px;
+}
+
+.button {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 6 16;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #4C4F51;
+}
+.button:pressed {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+.button.primary {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+.button.primary:hover {
+    -fx-background-color: #2AA093;
+}
+
+.dist-combo {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+    -fx-padding: 2 6;
+}
+.dist-combo .list-cell {
+    -fx-text-fill: #A9B7C6;
+    -fx-background-color: #3C3F41;
+}
+.dist-combo .list-cell:hover {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 4 6;
+}
+.text-field:focused {
+    -fx-border-color: #33BBAD;
+}
+
+.check-box {
+    -fx-text-fill: #A9B7C6;
+}
+.check-box .box {
+    -fx-background-color: #3C3F41;
+    -fx-border-color: #4C4F51;
+}
+.check-box:selected .box .mark {
+    -fx-background-color: #33BBAD;
+}
+
+.scroll-pane {
+    -fx-background-color: #2B2B2B;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+}
+.scroll-pane .viewport {
+    -fx-background-color: #2B2B2B;
+}
+.scroll-bar {
+    -fx-background-color: #3C3F41;
+}
+.scroll-bar .thumb {
+    -fx-background-color: #4C4F51;
+    -fx-background-radius: 3px;
+}
+.scroll-bar .thumb:hover {
+    -fx-background-color: #5C5F61;
+}
+
+.canvas {
+    -fx-background-color: #2B2B2B;
+}

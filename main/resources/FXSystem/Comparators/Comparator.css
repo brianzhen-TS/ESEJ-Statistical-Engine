@@ -1,0 +1,219 @@
+/* noinspection CssUnknownPseudoClass */
+.root {
+    -fx-background-color: #2B2B2B;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.label {
+    -fx-text-fill: #A9B7C6;
+    -fx-font-size: 13px;
+    -fx-font-weight: normal;
+}
+
+.button {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 6 16;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #4C4F51;
+}
+.button:pressed {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+
+/* Primary action buttons (e.g., "Compare", "Generate") */
+.button.primary {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+.button.primary:hover {
+    -fx-background-color: #2AA093;
+}
+.button.primary:pressed {
+    -fx-background-color: #1F7A6E;
+}
+
+.combo-box {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 2 6;
+}
+.combo-box .list-cell {
+    -fx-text-fill: #A9B7C6;
+    -fx-background-color: #3C3F41;
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.combo-box .arrow-button .arrow {
+    -fx-background-color: #A9B7C6;
+}
+.combo-box .combo-box-popup .list-view {
+    -fx-background-color: #3C3F41;
+    -fx-border-color: #4C4F51;
+}
+
+.text-field, .text-area {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 4 6;
+}
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #33BBAD;
+    -fx-border-width: 1.5px;
+}
+.text-area .content {
+    -fx-background-color: #3C3F41;
+}
+
+.radio-button {
+    -fx-text-fill: #A9B7C6;
+}
+.radio-button .radio {
+    -fx-background-color: #3C3F41;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 10px;
+}
+.radio-button:selected .radio .dot {
+    -fx-background-color: #33BBAD;
+}
+
+.check-box {
+    -fx-text-fill: #A9B7C6;
+}
+.check-box .box {
+    -fx-background-color: #3C3F41;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+}
+.check-box:selected .box .mark {
+    -fx-background-color: #33BBAD;
+}
+
+.scroll-pane {
+    -fx-background-color: #2B2B2B;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+}
+.scroll-pane .viewport {
+    -fx-background-color: #2B2B2B;
+}
+.scroll-bar {
+    -fx-background-color: #3C3F41;
+}
+.scroll-bar .thumb {
+    -fx-background-color: #4C4F51;
+    -fx-background-radius: 3px;
+}
+.scroll-bar .thumb:hover {
+    -fx-background-color: #5C5F61;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #2B2B2B;
+}
+.tab-pane .tab {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+}
+.tab-pane .tab:selected {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+
+.chart {
+    -fx-background-color: #2B2B2B;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+.chart-title {
+    -fx-text-fill: #A9B7C6;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.axis-label {
+    -fx-text-fill: #A9B7C6;
+}
+.chart-plot-background {
+    -fx-background-color: #2B2B2B;
+}
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: #3C3F41;
+}
+.chart-series-line {
+    -fx-stroke-width: 2px;
+}
+.chart-legend {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-border-color: #4C4F51;
+}
+.chart-legend-item {
+    -fx-text-fill: #A9B7C6;
+}
+
+/* Custom section titles used in Comparator */
+.section-title {
+    -fx-text-fill: #33BBAD;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Specific overrides for .dist-combo1 / .dist-combo2 / .test-combo / .sub-combo */
+.dist-combo1, .dist-combo2, .test-combo, .sub-combo {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+    -fx-border-color: #4C4F51;
+    -fx-border-radius: 3px;
+}
+.dist-combo1 .list-cell, .dist-combo2 .list-cell, .test-combo .list-cell, .sub-combo .list-cell {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+}
+.dist-combo1 .list-cell:hover, .dist-combo2 .list-cell:hover,
+.test-combo .list-cell:hover, .sub-combo .list-cell:hover {
+    -fx-background-color: #33BBAD;
+    -fx-text-fill: white;
+}
+
+.progress-indicator {
+    -fx-progress-color: #33BBAD;
+}
+
+.alert {
+    -fx-background-color: #2B2B2B;
+}
+.alert .header-panel {
+    -fx-background-color: #3C3F41;
+}
+.alert .header-panel .label {
+    -fx-text-fill: #A9B7C6;
+}
+.alert .content {
+    -fx-background-color: #2B2B2B;
+    -fx-text-fill: #A9B7C6;
+}
+.alert .button-bar .button {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: #A9B7C6;
+}
+.alert .button-bar .button:hover {
+    -fx-background-color: #4C4F51;
+}
