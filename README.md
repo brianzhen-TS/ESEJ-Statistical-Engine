@@ -35,7 +35,8 @@ But to assemble it using maven, here's how:
 <p>
 - First, install the .zip file from the releases and unzip it <br>
 - Then, in your IDE (IntelliJ IDEA recommanded), add it to your project classpath, and in your project's root pom.xml, add
-their dependecies. In the current settings, you have to import <b>fx-system</b> package from <b>com.eta</b> to access the gui pages. <br>
+their dependecies. In the current settings, you have to import <b>fx-system</b> package from <b>com.eta</b> to access the gui pages.
+Note that you have to configure the pom.xml files from "Maven Settings" package properly before importing fx-system.<br>
 - Set up your entry point. The entry point of the app was:
 
 ```java
@@ -60,7 +61,7 @@ And remember to configure the main class as the entry point class name(in your p
 mvn javafx:run
 ```
 
-in your terminal or in IntelliJ IDEA, open "Maven" and then "Execute Maven Goal", then enter the above command.
+In IntelliJ IDEA, open "Maven" and then "Execute Maven Goal", then enter the above command.
 Remember inside your project's root pom.xml, it has something like:
 
 ```xml
