@@ -17,7 +17,7 @@ In the current version of the ESEJ engine:
     * Plot multivariate distributions(2D/3D) - enables users to plot multivariate distributions(only bivariate; current version
       only allow users to plot bivariate Normal) to contour heat Canvas(2D) or in a meshView(3D). Only 2D page allow user to export
       the canvas as .png file.
-    * Data Analyzer / Power Analyzer / Regression visualizer - Enables users to perform data visualization, power analysis,
+    * Data Analyzer / Power Analyzer (currently disabled) / Regression visualizer - Enables users to perform data visualization, power analysis,
       and regression visualization in the FXSystem. These pages are one of the advanced tool this application provides. All pages
       (except power analysis page because it won't generate any charts) can export the generated chart as .png file.
 * Note: In the current version of the application, you can't rename or restyle the generated charts. I'll add these
@@ -35,16 +35,7 @@ But to assemble it using maven, here's how:
 <p>
 - First, install the .zip file from the releases and unzip it <br>
 - Then, in your IDE (IntelliJ IDEA recommanded), add it to your project classpath, and in your project's root pom.xml, add
-their dependecies. In the current settings, The required dependencies are: <br>
-<b>
-eta-link, <br>
-eta-core, <br>
-eta-gui-shared-backend (since the main page and the multi-comparatoe page uses it) <br>
-eta-fx-backend (the main backend) <br>
-JFreeChartShared (for regression page) <br>
-eta-util-java, (the utillty class) <br>
-fx-system (the application) <br>
-</b>
+their dependecies. In the current settings, you have to import <b>fx-system</b> package from <b>com.eta</b> to access the gui pages. <br>
 - Set up your entry point. The entry point of the app was:
 
 ```java
@@ -80,6 +71,7 @@ Remember inside your project's root pom.xml, it has something like:
             <artifactId>javafx-maven-plugin</artifactId>
             <version>0.0.8</version>
             <configuration>
+                <!-- Remember replace it with your actual file name and locations !-->
                 <mainClass>Test.TestApp</mainClass>
             </configuration>
         </plugin>
